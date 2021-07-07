@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotizar Criptomonedas</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="one-half column">
+                <img src="img/fondo.jpg">
+            </div>
+            <div class="one-half column">
+                <form id="formulario">
+                    <div class="row">
+                        <label>Elige tu Moneda</label>
+                        <select
+                            class="u-full-width"
+                            id="moneda"
+                            name="moneda"
+                        >
+                        <!-- disabled selected solo para seleccinarlo una vez y luego se bloquea -->
+                                <option value="" disabled selected>Elige tu moneda</option> 
+                                <option value="USD">Dolar Estadounidense</option>
+                                <option value="MXN">Peso Mexicano</option>
+                                <option value="GBP">Libras</option>
+                                <option value="EUR">Euros</option>
+                                <option value="GTQ">Quetzales</option>
+                                <option value="PEN">Soles (peru)</option>
+                                <option value="ARS">Peso Argentino</option>
+                                <option value="AUD">Dólar australiano</option>
+                                <option value="BOB">Bolivares</option>
+                                <option value="BRL">Real brasileño</option>
+                                <option value="CHF">Franco suizo</option>
+                                <option value="CLP">Peso Chileno</option>
+                                <option value="CNY">Yuan chino</option>
+                                <option value="COP">Peso Colombiano</option>
+                                <option value="CRC">Colón costarricense</option>
+                                <option value="EGP">Libra egipcia</option>
+                                <option value="HNL">Lempira Honduras</option>
+                                <option value="JPY">Yen Japon</option>
+                                <option value="NOK">Corona Noruega</option>
+                                <option value="PAB">Balboa Panama</option>
+                                <option value="RUB">Rublo ruso</option>
+                                <option value="TZS">Chelín tanzano tanzania</option>
+                                <option value="UGX">Chelín ugandés</option>
+                                <option value="UYU">Peso Uruguayo</option>
+                                <option value="VES">Bolívar soberano Venezuela</option>
+
+                        </select>
+                    </div>
+
+                    <div class="row">
+                    <div>
+                        <label>Elige tu Criptomoneda</label>
+                        <select 
+                            class="u-full-width"
+                            id="criptomonedas"
+                            name="criptomoneda"
+                        >
+                            <option value="" disabled selected>Elige tu criptomoneda</option>
+                        </select>
+                    </div>
+                   
+                    </div>
+                    <input class="button-primary u-full-width" type="submit" value="Cotizar" />
+
+                    <div id="resultado" class="resultado" style="background-color: #5e8dd32f;padding: 10px;border-radius: 25px;"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+    
+</body>
+</html>
